@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueria Jacub - El Sabor de las Alturas</title>
+    <!-- logo de la jugueria -->
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/estilo_login.css">
+
+    <!-- reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+    <section class="login-box">
+      
+ <!-- Agregar logo aquí -->
+ <center>
+    <img src="../img/logo.png" alt="Logo de Jugueria Jacub" style="width: 150px; height: auto;">
+</center>
+<center>
+        <p class="pep">LOGIN</p></center>
+ 
+        <form action="tu_script_de_validacion.php" method="post">
+          <article class="user-box">
+            <input type="text" name="username" required>
+            <label>Username</label>
+          </article>
+          <article class="user-box">
+            <input type="password" name="password" required>
+            <label>Password</label>
+          </article>
+          <div class="g-recaptcha" data-sitekey="6Ldh7wkqAAAAABtnviXamh356mBXVcnZkXLobWKK"></div>
+          <center>
+          <a href="../intranet/index2.html">
+            Entrar
+        <span></span>
+     </a></center>
+   
+        </form>
+        <br>
+        <br>
+        <section> <a id="crearcuenta" href="../intranet/register.html">Crear Cuenta</a></section>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+          $(document).ready(function() {
+              $('#login-form').on('submit', function(event) {
+                  event.preventDefault();
+                  var recaptchaResponse = grecaptcha.getResponse();
+  
+                  if (recaptchaResponse.length === 0) {
+                      alert('Por favor, completa el CAPTCHA');
+                  } else {
+                      // Enviar los datos al servidor
+                      $.ajax({
+                          url: 'tu_script_de_validacion.php',
+                          method: 'POST',
+                          data: $(this).serialize() + '&g-recaptcha-response=' + recaptchaResponse,
+                          success: function(response) {
+                              // Manejar la respuesta del servidor aquí
+                              if (response === 'success') {
+                                  window.location.href = '../intranet/index.html';
+                              } else {
+                                  alert(response);
+                              }
+                          }
+                      });
+                  }
+              });
+          });
+      </script>
+</body>
+</html>

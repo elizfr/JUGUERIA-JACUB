@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueria Jacub - El Sabor de las Alturas</title>
+    <!-- logo de la jugueria -->
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/all.min.css"> <!-- fontawesome -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/bootstrap/dist/css/bootstrap.min.css" /> 
+    <!-- CSS Theme -->
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/theme-green.min.css" />  
+    
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo_menu1.css">
+    <link rel="stylesheet" href="../css/estilo_menu2.css">
+    <link rel="stylesheet" href="../css/estilo_menu3.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headers = document.querySelectorAll('.categoria-carta header');
+            headers.forEach(function (header) {
+                header.addEventListener('click', function () {
+                    var content = this.nextElementSibling;
+                    content.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Intro -->
+    <header>
+        <nav class="module module-navigation mr-4" style="font-size: 1.3rem;">
+            <ul id="nav-main" class="nav nav-main">
+                <li><a href="../vistas/index.html" class="nav-item nav-link">Principal</a></li>
+                <li><a href="../vistas/carta.html" class="nav-item nav-link">Carta</a></li>
+                <li><a href="../vistas/promos.html" class="nav-item nav-link">Promos</a></li>
+                <li><a href="../vistas/comanda.html" class="nav-item nav-link">Comanda</a></li>
+                <li class="ancho-menu" class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown" class="dropdown-menu m-0">
+                        <li class="alinea_derecha"><a href="../vistas/nosotros.html" class="dropdown-item">Sobre
+                                Nosotros</a></li>
+                        <li class="alinea_derecha"><a href="../vistas/reseñas.html"
+                                class="dropdown-item">Reseñas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../vistas/contactenos.html" class="nav-item nav-link">Contáctanos</a></li>
+
+                <li class="col-md-2">
+                    <a href="#" class="nav-item nav-link" class="module module-cart right" data-toggle="panel-cart" id=verCarrito>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="notification" id="notif"></span>
+                        </span>
+                        <span class="cart-value" id="totalCart"></span>
+                    </a>
+                </li>
+
+                <li class="alinea_derecha" class="nav-item">
+                    <a class="nav-link" href="../vistas/login.html"> <i class="fa-solid fa-user" aria-hidden="true"></i> Login</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cabecera - Movil / End --><!-- Content -->
+    <main id="content">
+
+        <!-- Page Title -->
+        <article class="page-title bg-cabecera light">
+            <main class="bg-image bg-parallax">
+            </main>
+            <article class="container">
+                <ul class="row">
+                    <li class="col-lg-8 push-lg-4">
+                        <h1 class="mb-0"><b>Reseñas</b></h1>
+                    </li>
+                </ul>
+            </article>
+        </article>
+
+        <!-- Page Content -->
+        <section class="page-content pt-0 pull-up-30 protrude">
+            <main class="container">
+                <main class="row mb-5">
+                    <section class="col-xl-8 push-xl-2">
+                        <!-- Blockquote -->
+                        <blockquote class="blockquote blockquote-lg"
+                            data-center-top="filter: blur(0); transform: scale(1);"
+                            data-bottom-top="transform: scale(0.9);">
+                            <article class="blockquote-content dark">
+                                <li class="rate rate-sm mb-3"><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i></li>
+                                <p>Y tus consumidores esperamos más ansiosos aún!!!</p>
+                            </article>
+                            <footer>
+                                <img loading="lazy" src="https://sanagustin.pe/src/img/avatars/avatar_03.jpg" alt="">
+                                <span class="name">Luz Maria<span class="text-muted">, Facebook</span></span>
+                            </footer>
+                        </blockquote>
+                        <!-- Blockquote -->
+                        <blockquote class="blockquote blockquote-lg light"
+                            data-center-top="filter: blur(0); transform: scale(1);"
+                            data-bottom-top="transform: scale(0.9);">
+                            <article class="blockquote-content">
+                                <li class="rate rate-sm mb-3"><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i></li>
+                                <p>Los mejores sandwich, y batidos de Trujillo, y del Perú. Ahora en casa.
+                                    Gracias San Agustín.!!!!!!</p>
+                            </article>
+                            <footer>
+                                <img loading="lazy" src="https://sanagustin.pe/src/img/avatars/avatar_04.jpg" alt="">
+                                <span class="name">Alicia Elizabeth Chang Cerna<span class="text-muted">,
+                                        Facebook</span></span>
+                            </footer>
+                        </blockquote>
+                        <!-- Blockquote -->
+                        <blockquote class="blockquote blockquote-lg"
+                            data-center-top="filter: blur(0); transform: scale(1);"
+                            data-bottom-top="transform: scale(0.9);">
+                            <article class="blockquote-content dark">
+                                <li class="rate rate-sm mb-3"><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i></li>
+                                <p>Lugar de paso con deliciosos jugos y tradicionales sandwiches de pavo y cerdo. Lugar
+                                    muy conocido y frecuentado en la ciudad de Trujillo</p>
+                            </article>
+                            <footer>
+                                <img src="" alt="">
+                                <span class="name">Daisy G<span class="text-muted">, Tripadvisor</span></span>
+                            </footer>
+                        </blockquote>
+                        <!-- Blockquote -->
+                        <blockquote class="blockquote blockquote-lg light"
+                            data-center-top="filter: blur(0); transform: scale(1);"
+                            data-bottom-top="transform: scale(0.9);">
+                            <article class="blockquote-content">
+                                <li class="rate rate-sm mb-3"><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i></li>
+                                <p>Excelente, lo mejor de lo mejor no hay visitante que no se quede encantado de su
+                                    sazón.</p>
+                            </article>
+                            <footer>
+                                <img loading="lazy" src="https://sanagustin.pe/src/img/avatars/avatar_06.jpg" alt="">
+                                <span class="name">Juana Florencia Gonzalez Olivo<span class="text-muted">,
+                                        Facebook</span></span>
+                            </footer>
+                        </blockquote>
+                        <!-- Blockquote -->
+                        <blockquote class="blockquote blockquote-lg"
+                            data-center-top="filter: blur(0); transform: scale(1);"
+                            data-bottom-top="transform: scale(0.9);">
+                            <article class="blockquote-content dark">
+                                <li class="rate rate-sm mb-3"><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i></li>
+                                <p>Yupiiii!!! que lindo a comer rico los mejores Sandwich ya prontito atención en la
+                                    casita lo máximo.</p>
+                            </article>
+                            <footer>
+                                <img loading="lazy" src="https://sanagustin.pe/src/img/avatars/avatar_07.jpg" alt="">
+                                <span class="name">Zoila Alvan Swissjust<span class="text-muted">,
+                                        Facebook</span></span>
+                            </footer>
+                        </blockquote>
+                        <!-- Blockquote -->
+                        <blockquote class="blockquote blockquote-lg light"
+                            data-center-top="filter: blur(0); transform: scale(1);"
+                            data-bottom-top="transform: scale(0.9);">
+                            <article class="blockquote-content">
+                                <li class="rate rate-sm mb-3"><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i></li>
+                                <p>Muy rico los jugos y ni que decir del sándwich de pavo o el de lechón con su zarcita
+                                    criolla y el rocotito</p>
+                            </article>
+                            <footer>
+                                <img src="" alt="">
+                                <span class="name">Blazrd<span class="text-muted">, Tripadvisor</span></span>
+                            </footer>
+                        </blockquote>
+                        <!-- Blockquote -->
+                        <blockquote class="blockquote blockquote-lg light"
+                            data-center-top="filter: blur(0); transform: scale(1);"
+                            data-bottom-top="transform: scale(0.9);">
+                            <article class="blockquote-content dark">
+                                <li class="rate rate-sm mb-3"><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i><i
+                                        class="fa fa-star active"></i><i class="fa fa-star active"></i></li>
+                                <p>Delicioso el pavo y su juguito mas! Soy trujillano y nunca dejo de darme un gustito
+                                    en San Agustin.</p>
+                            </article>
+                            <footer>
+                                <img loading="lazy" src="https://sanagustin.pe/src/img/avatars/avatar_09.jpg" alt="">
+                                <span class="name">Jose Luis Canchachi Acuña<span class="text-muted">,
+                                        Facebook</span></span>
+                            </footer>
+                        </blockquote>
+                    </section>
+                </main>
+            </main>
+        </section>
+
+        <!-- Section -->
+        <section class="section section-lg dark bg-dark">
+
+            <!-- BG Image -->
+            <article class="bg-image bg-parallax"><img loading="lazy"
+                    src="https://sanagustin.pe/src/img/photos/banner-fresas.jpg" alt=""></article>
+
+            <article class="container text-center">
+                <li class="col-lg-7 push-lg-1">
+                    <h2 class="mb-3"><b>¿Quieres engreir tu paladar?</b></h2>
+                    <h5 class="mb2">¡Visita nuestra carta y escoge lo que mas te guste!</h5>
+                    <a href="../vistas/carta.html" class="btn btn-lg btn-primary"><span>Ordena Ahora</span></a>
+                </li>
+            </article>
+
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-footer dark">
+
+            <main class="container col-11">
+                <!-- Footer 2nd Row -->
+                <section class="footer-second-row row align-items-center">
+                    <article class="col-lg-4 text-center text-md-left" style="padding:0;">
+                        <h6><b>Horario de Atención: </b></h6>
+                        <h6><b>Lunes a sábado: 08:00 a.m. - 12:55 p.m. y de 5:00 - 9:55 p.m.</b></h6>
+                        <h6><b>Domingo: 8:00 a.m. - 12:55 p.m.</b></h6>
+                        <h6><b>Teléfono fijo: 221033</b></h6>
+                        <h6><b>Celular: 949623222</b></h6>
+                        <h6><b>Correo: jugueriajacub@gmail.com</b></h6>
+                    </article>
+                    <li class="col-lg-4 text-center">
+                        <a href="../vistas/index.html"><img loading="lazy"
+                                src="../img/logo.png" alt="" width="150" class="mt-5 mb-5"></a>
+                    </li>
+                    <article class="col-lg-4 col-md-6 text-center text-md-right">
+                        <a href="#" class="icon icon-social icon-circle icon-facebook"
+                        style="background-color:#415e9b; max-width: 80px; height: auto;">
+                        <i class="fa-brands fa-facebook"></i></a>
+
+                    <a href="#" class="icon icon-social icon-circle icon-instagram"
+                        style="background-color:#ec1d59; max-width: 80px; height: auto;">
+                        <i class="fa-brands fa-instagram"></i></a>
+                    </article>
+                </section>
+            </main>
+
+            <article class="container text-center">
+                <span class="text-sm">Copyright Juguería Jacub 2024©<br>Todos los derechos reservados.</span>
+            </article>
+
+            <!-- Back To Top -->
+            <a href="#" id="back-to-top"><i class="ti ti-angle-up"></i></a>
+
+        </footer>
+    </main>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+
+    <!-- JS Plugins -->
+   
+    
+    <script src="https://sanagustin.pe/src/plugins/jquery.appear/jquery.appear.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>   
+    <script src="https://sanagustin.pe/src/plugins/skrollr/dist/skrollr.min.js"></script>  
+    <!-- JS Core -->
+    <script src="https://sanagustin.pe/src/js/core.min.js"></script>
+    <script src="https://sanagustin.pe/src/js/carrito.min.js"></script>
+
+</body>
+
+</html>

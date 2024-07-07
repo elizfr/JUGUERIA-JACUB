@@ -1,0 +1,54 @@
+/*desplegables*/
+.categoria-carta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las categorías en la fila */
+    width: 55%; /* Asegura que las categorías ocupen todo el ancho disponible */
+    height: auto;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 0 10px;
+    flex-direction: row; /* Organiza las categorías en una fila */
+    align-items: center; /* Centra las categorías verticalmente */
+}
+.categoria-carta header {
+    cursor: pointer;
+    position: relative;
+    text-align: center; /* Centra el título */
+    padding-top: 1px; /* Ajusta la posición vertical del título */
+}
+.categoria-carta header img {
+    width: 100%;
+    height: auto;
+}
+  
+.categoria-carta header h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+}
+
+.contenido-carta {
+    display: none;
+}
+.contenido-carta.active {
+    display: block;
+}
+.carta-item {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+select {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+  }
+  

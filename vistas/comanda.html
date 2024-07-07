@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueria Jacub - El Sabor de las Alturas</title>
+    <!-- logo de la jugueria -->
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/all.min.css"> <!-- fontawesome -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/animsition/dist/css/animsition.min.css" />
+
+    <!-- CSS Icons -->
+    <link rel="stylesheet" href="https://sanagustin.pe/src/css/themify-icons.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/font-awesome/css/font-awesome.min.css" />
+
+    <!-- CSS Theme -->
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/theme-green.min.css" />
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/bootstrap.min.css" />
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/default.min.css" />
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/semantic.min.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/css/alertify.min.css" />
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo_menu1.css">
+    <link rel="stylesheet" href="../css/estilo_menu2.css">
+    <link rel="stylesheet" href="../css/estilo_menu3.css">
+    <link rel="stylesheet" href="../css/estilo_promos.css">
+    <link rel="stylesheet" href="../css/estilo_carta.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var headers = document.querySelectorAll('.categoria-carta header');
+            headers.forEach(function (header) {
+                header.addEventListener('click', function () {
+                    var content = this.nextElementSibling;
+                    content.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Intro -->
+    <header>
+        <nav class="module module-navigation mr-4" style="font-size: 1.3rem;">
+            <ul id="nav-main" class="nav nav-main">
+                <li><a href="../vistas/index.html" class="nav-item nav-link">Principal</a></li>
+                <li><a href="../vistas/carta.html" class="nav-item nav-link">Carta</a></li>
+                <li><a href="../vistas/promos.html" class="nav-item nav-link">Promos</a></li>
+                <li><a href="../vistas/comanda.html" class="nav-item nav-link">Comanda</a></li>
+                <li class="ancho-menu" class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown" class="dropdown-menu m-0">
+                        <li class="alinea_derecha"><a href="../vistas/nosotros.html" class="dropdown-item">Sobre
+                                Nosotros</a></li>
+                        <li class="alinea_derecha"><a href="../vistas/reseñas.html" class="dropdown-item">Reseñas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../vistas/contactenos.html" class="nav-item nav-link">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cabecera - Movil -->
+    <header id="header-mobile" class="light">
+
+        <article class="module module-nav-toggle">
+            <a href="#" id="nav-toggle"
+                data-toggle="panel-mobile"><span></span><span></span><span></span><span></span></a>
+        </article>
+
+        <article class="module module-logo">
+            <a href="https://sanagustin.pe/">
+                <img loading="lazy" src="https://sanagustin.pe/src/img/logoo.png" alt="">
+            </a>
+        </article>
+        <a href="https://sanagustin.pe/Carta" class="btn btn-sm btn-primary" style="float:right"><span>Ordena
+                Aqui</span></a>
+
+    </header>
+    <!-- Cabecera - Movil / End --><!-- Content -->
+    <main id="content">
+        <!-- Imagen -->
+        <article class="page-title bg-cabecera light">
+            <main class="bg-image bg-parallax">
+            </main>
+            <article class="container">
+                <ul class="row">
+                    <li class="col-lg-8 push-lg-4">
+                        <h1 class="mb-0"><b>Comanda</b></h1>
+                    </li>
+                </ul>
+            </article>
+        </article>
+
+        <!-- Section -->
+        <section class="section bg-light">
+
+            <article class="container col-12">
+                <article class="row">
+                    <main class="col-xl-5 push-xl-7 col-lg-6 push-lg-6">
+                        <article class="shadow bg-white stick-to-content mb-4">
+                            <figure class="bg-footer dark p-4">
+                                <h5 class="mb-0">Tu Orden</h5>
+                            </figure>
+                            <table class="table-cart" id="tablePago">
+                            </table>
+                            <aside class="cart-summary">
+                                <main class="row">
+                                    <article class="col-7 text-right text-muted">Total Compra:</article>
+                                    <article class="col-5" id="totalCompraPagar">S/ 0.00</article>
+                                </main>
+                                <main class="row" hidden>
+                                    <article class="col-7 text-right text-muted">Descuento 10% Web :</article>
+                                    <article class="col-5 price text-success" id="descuentoWebPago">S/ 0.00</article>
+                                </main>
+                                <main class="row">
+                                    <article class="col-7 text-right text-muted">Delivery:</article>
+                                    <article class="col-5" id="precioDelivery">S/ 0.00</article>
+                                </main>
+                                <hr class="hr-sm">
+                                <article class="row text-lg">
+                                    <article class="col-7 text-right text-muted">Total:</article>
+                                    <article class="col-5" id="totalFinal">S/ 0.00</article>
+                                </article>
+                            </aside>
+                        </article>
+                    </main>
+                    <main class="col-xl-7 pull-xl-5 col-lg-6 pull-lg-6">
+                        <figure class="bg-white p-4 p-md-5 mb-4">
+                            <h4 class="border-bottom pb-4"><i class="ti ti-user mr-3 text-primary"></i><b>Información
+                                    Básica</b></h4>
+                            <aside class="row mb-5">
+                                <article class="form-group col-sm-6">
+                                    <label><b>Nombre:*</b></label>
+                                    <input type="text" class="form-control" id="nombre">
+                                </article>
+                                <article class="form-group col-sm-6">
+                                    <label><b>Apellido:*</b></label>
+                                    <input type="text" class="form-control" id="apellido">
+                                </article>
+                                <article class="form-group col-sm-6">
+                                    <label><b>Dirección:*</b></label>
+                                    <input type="text" class="form-control" id="direccion">
+                                </article>
+                                <main class="form-group col-sm-6">
+                                    <label><b>Urbanización:*</b></label>
+                                    <article class="select-container">
+                                        <select class="form-control" id="zona">
+                                            <option value="">Seleccione una ciudad</option>
+                                            <option value="1">Lima</option>
+                                            <option value="2">Miraflores</option>
+                                            <option value="3">San Isidro</option>
+                                            <option value="4">Barranco</option>
+                                            <option value="5">San Borja</option>
+                                            <option value="6">Surco</option>
+                                            <option value="7">La Molina</option>
+                                            <option value="8">San Miguel</option>
+                                            <option value="9">Pueblo Libre</option>
+                                            <option value="10">Magdalena del Mar</option>
+                                            <option value="11">Jesús María</option>
+                                            <option value="12">Lince</option>
+                                            <option value="13">Breña</option>
+                                            <option value="14">Chorrillos</option>
+                                            <option value="15">Surquillo</option>
+                                            <option value="16">Ate</option>
+                                            <option value="17">San Juan de Lurigancho</option>
+                                            <option value="18">San Juan de Miraflores</option>
+                                            <option value="19">Villa El Salvador</option>
+                                            <option value="20">Villa María del Triunfo</option>
+                                            <option value="21">El Agustino</option>
+                                            <option value="22">Rímac</option>
+                                            <option value="23">La Victoria</option>
+                                            <option value="24">Carmen de la Legua Reynoso</option>
+                                            <option value="25">Callao</option>
+                                            <option value="26">Bellavista</option>
+                                            <option value="27">La Perla</option>
+                                            <option value="28">Ventanilla</option>
+                                            <option value="29">Santa Anita</option>
+                                            <option value="30">Independencia</option>
+                                            <option value="31">Comas</option>
+                                            <option value="32">Los Olivos</option>
+                                            <option value="33">San Martín de Porres</option>
+                                            <option value="34">Carabayllo</option>
+                                            <option value="35">Puente Piedra</option>
+                                            <option value="36">Ancón</option>
+                                            <option value="37">Santa Rosa</option>
+                                        </select>
+                                    </article>
+                                </main>
+                                <article class="form-group col-sm-12">
+                                    <label><b>Referencia:</b></label>
+                                    <input type="text" class="form-control" id="referencia">
+                                </article>
+                                <article class="form-group col-sm-6">
+                                    <label><b>Celular:*</b></label>
+                                    <input type="text" class="form-control" id="celular">
+                                </article>
+                                <article class="form-group col-sm-6">
+                                    <label><b>E-mail:*</b></label>
+                                    <input type="email" class="form-control" id="email">
+                                </article>
+                                <article class="form-group col-sm-6">
+                                    <label><b>(*) Campos obligatorios</b></label>
+                                </article>
+
+                            </aside>
+                            <h4 class="border-bottom pb-4"><i class="ti ti-package mr-3 text-primary"></i><b>Forma de
+                                    Entrega</b></h4>
+                            <aside class="row text-lg mb-5">
+                                <article class="col-md-6 form-group col-sm-6">
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio" name="entrega_type" class="custom-control-input"
+                                            id="checkDelivery">
+                                        <span class="custom-control-indicator"></span>
+                                        <span><b>Delivery</b></span>
+                                    </label>
+                                    <br>
+                                    <article class="select-container">
+                                        <select class="form-control" id="tiempoDelivery">
+                                            <option value="0">Lo más pronto posible</option>
+                                            <option value="1-2">1h - 2h</option>
+                                            <option value="2-3">2h - 3h</option>
+                                        </select>
+                                    </article>
+                                </article>
+                                <article class="col-md-4 col-sm-8 form-group" hidden>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio" name="entrega_type" class="custom-control-input"
+                                            id="checkRecojoTienda">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description"><b>Recojo en Tienda</b></span>
+                                    </label>
+                                </article>
+                            </aside>
+
+
+                            <h4 class="border-bottom pb-4"><i class="ti ti-wallet mr-3 text-primary"></i><b>Pago</b>
+                            </h4>
+                            <section class="row text-lg mb-5">
+                                <section class="col-md-4 col-sm-2 form-group">
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio" name="payment_type" class="custom-control-input"
+                                            id="checkTarjeta">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description"><b>Tarjeta</b></span>
+                                    </label>
+                                </section>
+                                <section class="col-md-4 col-sm-2 form-group">
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio" name="payment_type" class="custom-control-input"
+                                            id="checkEfectivo">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description"><b>Efectivo</b></span>
+                                    </label><br>
+                                    <section class="form-group col-sm-12" id="montoEfectivo" hidden>
+                                        <label><b>Monto con el cual cancelará:</b></label>
+                                        <input type="text" class="form-control" id="montoVuelto">
+                                    </section>
+                                </section>
+                                <section class="col-md-4 col-sm-2 form-group" hidden>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio" name="payment_type" class="custom-control-input">
+                                        <span class="custom-control-indicator"></span>
+                                        <span class="custom-control-description"><b>Yape</b></span>
+                                    </label>
+                                </section>
+                            </section>
+                        </figure>
+                        <article class="form-group text-center">
+                            <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="checkTerminos">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description"><b>Terminos & Condiciones - </b><a
+                                        href="#termModal" data-toggle="modal" class="text-success"><b>Click
+                                            aquí</b></a></span>
+                            </label>
+                        </article>
+                        <article class="text-center">
+                            <button type="button" class="btn btn-primary btn-lg" id="ordenar"><span>Ordenar
+                                    Ahora</span></button>
+                        </article>
+                    </main>
+                </article>
+            </article>
+            <main class="modal fade" id="termModal" role="dialog">
+                <article class="modal-dialog modal-lg" role="document">
+                    <article class="modal-content">
+                        <section class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel"><b>TÉRMINOS Y USO DE PÁGINA WEB</b></h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i
+                                    class="ti-close"></i></button>
+                        </section>
+                        <main class="modal-body">
+                            <p>
+                                Las presentes condiciones generales de uso de la página web, regulan los
+                                términos y condiciones de acceso y uso de www.jacub.pe, propiedad de
+                                MW E.I.R.L., con domicilio en Av. América Norte Mz M Lt. 11, Natasha y con
+                                RUC número 20601847320, en adelante, «la Empresa», que el usuario del Portal
+                                deberá de leer y aceptar para usar todos los servicios e información que se
+                                facilitan desde el portal. El mero acceso y/o utilización del portal, de todos o parte
+                                de sus contenidos y/o servicios significa la plena aceptación de las presentes
+                                condiciones generales de uso.
+                            </p>
+                            <h4>2. Condiciones de uso</h4>
+                            <p>
+                                Las presentes condiciones generales de uso del portal regulan el acceso y la
+                                utilización del portal, incluyendo los contenidos y los servicios puestos a
+                                disposición de los usuarios en y/o a través del portal, bien por el portal, bien por
+                                sus usuarios, bien por terceros. No obstante, el acceso y la utilización de ciertos
+                                contenidos y/o servicios puede encontrarse sometido a determinadas condiciones
+                                específicas.
+                            </p>
+                            <h4>3. Modificaciones</h4>
+                            <p>
+                                La empresa se reserva la facultad de modificar en cualquier momento las
+                                condiciones generales de uso del portal. En todo caso, se recomienda que
+                                consulte periódicamente los presentes términos de uso del portal, ya que pueden
+                                ser modificados.
+                            </p>
+                            <h4>4. Obligaciones del Usuario</h4>
+                            <p>El usuario deberá respetar en todo momento los términos y condiciones
+                                establecidos en las presentes condiciones generales de uso del portal. De forma
+                                expresa el usuario manifiesta que utilizará el portal de forma diligente y asumiendo
+                                cualquier responsabilidad que pudiera derivarse del incumplimiento de las normas.
+                            </p>
+                            <p>
+                                Así mismo, el usuario no podrá utilizar el portal para transmitir, almacenar, sectionulgar
+                                promover o distribuir datos o contenidos que sean portadores de virus o cualquier
+                                otro código informático, archivos o programas diseñados para interrumpir, destruir
+                                o perjudicar el funcionamiento de cualquier programa o equipo informático o de
+                                telecomunicaciones.
+                            </p>
+                            <h4>5. Responsabilidad del portal</h4>
+                            <p>El usuario conoce y acepta que el portal no otorga ninguna garantía de cualquier
+                                naturaleza, ya sea expresa o implícita, sobre los datos, contenidos, información y
+                                servicios que se incorporan y ofrecen desde el Portal.
+                            </p>
+                            <p>
+                                Exceptuando los casos que la Ley imponga expresamente lo contrario, y
+                                exclusivamente con la medida y extensión en que lo imponga, el Portal no
+                                garantiza ni asume responsabilidad alguna respecto a los posibles daños y
+                                perjuicios causados por el uso y utilización de la información, datos y servicios del
+                                Portal.
+                            </p>
+                            <p>
+                                En todo caso, el Portal excluye cualquier responsabilidad por los daños y
+                                perjuicios que puedan deberse a la información y/o servicios prestados o
+                                suministrados por terceros diferentes de la Empresa. Toda responsabilidad será
+                                del tercero ya sea proveedor o colaborador.
+                            </p>
+                            <h4>6. Propiedad intelectual e industrial</h4>
+                            <p>
+                                Todos los contenidos, marcas, logos, dibujos, documentación, programas
+                                informáticos o cualquier otro elemento susceptible de protección por la legislación
+                                de propiedad intelectual o industrial, que sean accesibles en el portal
+                                corresponden exclusivamente a la empresa o a sus legítimos titulares y quedan
+                                expresamente reservados todos los derechos sobre los mismos. Queda
+                                expresamente prohibida la creación de enlaces de hipertexto (links) a cualquier
+                                elemento integrante de las páginas web del Portal sin la autorización de la
+                                empresa, siempre que no sean a una página web del Portal que no requiera
+                                identificación o autenticación para su acceso, o el mismo esté restringido.
+                            </p>
+                            <p>
+                                En cualquier caso, el portal se reserva todos los derechos sobre los contenidos,
+                                información datos y servicios que ostente sobre los mismos. El portal no concede
+                                ninguna licencia o autorización de uso al usuario sobre sus contenidos, datos o
+                                servicios, distinta de la que expresamente se detalle en las presentes condiciones
+                                generales de uso del portal.
+                            </p>
+                            <h4>7. Legislación aplicable, jurisdicción competente y notificaciones</h4>
+                            <p>
+                                Las presentes condiciones se rigen y se interpretan de acuerdo con las leyes del
+                                Perú. Para cualquier reclamación serán competentes los juzgados y tribunales de
+                                (indicar la ciudad). Todas las notificaciones, requerimientos, peticiones y otras
+                                comunicaciones que el Usuario desee efectuar a la Empresa titular del Portal
+                                deberán realizarse por escrito y se entenderá que han sido correctamente
+                                realizadas cuando hayan sido recibidas en la siguiente dirección (indicar dirección
+                                de correo en la que se desean recibir las notificaciones).
+                            </p>
+                        </main>
+                        <article class="modal-footer">
+                            <button type="button" class="btn btn-primary"
+                                data-dismiss="modal"><span>Cerrar</span></button>
+                        </article>
+                    </article>
+                </article>
+            </main>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-footer dark">
+
+            <section class="container col-11">
+                <!-- Footer 2nd Row -->
+                <main class="footer-second-row row align-items-center">
+                    <article class="col-lg-4 text-center text-md-left" style="padding:0;">
+                        <h6><b>Horario de Atención: </b></h6>
+                        <h6><b>Lunes a sábado: 08:00 a.m. - 12:55 p.m. y de 5:00 - 9:55 p.m.</b></h6>
+                        <h6><b>Domingo: 8:00 a.m. - 12:55 p.m.</b></h6>
+                        <h6><b>Teléfono fijo: 221033</b></h6>
+                        <h6><b>Celular: 949623222</b></h6>
+                        <h6><b>Correo: jugueriajacub@gmail.com</b></h6>
+                    </article>
+                    <article class="col-lg-4 text-center">
+                        <a href="../vistas/index.html"><img loading="lazy" src="../img/logo.png" alt="" width="150"
+                                class="mt-5 mb-5"></a>
+                    </article>
+                    <article class="col-lg-4 col-md-6 text-center text-md-right">
+                        <a href="#" class="icon icon-social icon-circle icon-facebook"
+                            style="background-color:#415e9b; max-width: 80px; height: auto;">
+                            <i class="fa-brands fa-facebook"></i></a>
+
+                        <a href="#" class="icon icon-social icon-circle icon-instagram"
+                            style="background-color:#ec1d59; max-width: 80px; height: auto;">
+                            <i class="fa-brands fa-instagram"></i></a>
+                    </article>
+                </main>
+            </section>
+
+            <article class="container text-center">
+                <span class="text-sm">Copyright Juguería Jacub 2024©<br>Todos los derechos reservados.</span>
+            </article>
+
+            <!-- Back To Top -->
+            <a href="#" id="back-to-top"><i class="ti ti-angle-up"></i></a>
+
+        </footer>
+        <!-- Footer / End -->
+
+    </main>
+    <!-- Contenido / End -->
+
+    <!-- Panel Carrito -->
+    <main id="panel-cart">
+        <section class="panel-cart-container">
+            <article class="panel-cart-title">
+                <h5 class="title">Tu Carrito</h5>
+                <button class="close" data-toggle="panel-cart"><i class="ti ti-close"></i></button>
+            </article>
+            <aside class="panel-cart-content">
+                <table class="table-cart" id="tablaCarrito">
+                </table>
+                <main class="cart-summary">
+                    <article class="row text-lg">
+                        <article class="col-7 text-right text-muted">Total:</article>
+                        <article class="col-5" id="totalCompra"><strong></strong></article>
+                    </article>
+                </main>
+            </aside>
+        </section>
+        <a href="../vistas/comanda.html" class="panel-cart-action btn btn-secondary btn-block btn-lg"><span>Pagar
+                Ahora</span></a>
+    </main>
+
+    <!-- Body Overlay -->
+    <article id="body-overlay"></article>
+
+    <!-- JS Plugins -->  
+    <script src="https://sanagustin.pe/src/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/jquery.appear/jquery.appear.js"></script>    
+
+    <!-- JS Core -->
+    <script src="https://sanagustin.pe/src/js/core.min.js"></script>
+    <script src="https://sanagustin.pe/src/js/carrito.min.js"></script>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+
+</body>
+
+
+
+
+</html>

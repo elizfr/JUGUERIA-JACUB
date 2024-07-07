@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueria Jacub - El Sabor de las Alturas</title>
+    <!-- logo de la jugueria -->
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/all.min.css"> <!-- fontawesome -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- CSS Theme -->
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/theme-green.min.css" />
+
+    
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo_menu1.css">
+    <link rel="stylesheet" href="../css/estilo_menu2.css">
+    <link rel="stylesheet" href="../css/estilo_pr_principal.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+</head>
+
+<body>
+    <!-- Intro -->
+    <header class="parallax-window" data-parallax="scroll" data-image-src="../img/principal.jpg">
+        <nav class="module module-navigation mr-4" style="font-size: 1.3rem;">
+            <ul id="nav-main" class="nav nav-main">
+                <li><a href="../vistas/index.html" class="nav-item nav-link">Principal</a></li>
+                <li><a href="../vistas/carta.html" class="nav-item nav-link">Carta</a></li>
+                <li><a href="../vistas/promos.html" class="nav-item nav-link">Promos</a></li>
+                <li><a href="../vistas/comanda.html" class="nav-item nav-link">Comanda</a></li>
+                <li class="ancho-menu" class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown" class="dropdown-menu m-0">
+                        <li class="alinea_derecha"><a href="../vistas/nosotros.html" class="dropdown-item">Sobre
+                                Nosotros</a></li>
+                        <li class="alinea_derecha"><a href="../vistas/reseñas.html"
+                                class="dropdown-item">Reseñas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../vistas/contactenos.html" class="nav-item nav-link">Contáctanos</a></li>
+
+                <li class="col-md-2">
+                    <a href="#" class="nav-item nav-link" class="module module-cart right" data-toggle="panel-cart" id=verCarrito>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="notification" id="notif"></span>
+                        </span>
+                        <span class="cart-value" id="totalCart"></span>
+                    </a>
+                </li>
+
+                <li class="alinea_derecha" class="nav-item">
+                    <a class="nav-link" href="../vistas/login.html"> <i class="fa-solid fa-user" aria-hidden="true"></i> Login</a>
+                  </li>
+            </ul>
+        </nav>
+        <main class="container mx-auto px-2 tm-intro-width">
+            <section class="sm:pb-60 sm:pt-48 py-20">
+                <article class="bg-black bg-opacity-70 p-12 mb-5 text-center">
+                    <h1 class="text-white text-5xl tm-logo-font mb-5">Jugueria Jacub</h1>
+                    <p class="tm-text-gold tm-text-2xl">Tu refuerzo de energía diario</p>
+                </article>
+                <article class="bg-black bg-opacity-70 p-10 mb-5">
+                    <p class="text-white leading-8 text-sm font-light">
+                        Ofrecemos una variedad de productos frescos y un servicio de alta calidad. Realice su pedido y
+                        disfrute.
+                        ¡Estamos aquí para ayudarle!
+                        Siéntase libre de hacer su pedido.
+                        Para cualquier consulta, <a rel="nofollow" href="../vistas/contactenos.html"
+                            target="_parent">Envianos un mensaje</a>.
+                    </p>
+                </article>
+                <section class="text-center">
+                    <article class="inline-block">
+                        <a href="#Carta"
+                            class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
+                            <i class="fas fa-coffee mr-3"></i>
+                            <span>Exploremos...</span>
+                        </a>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </header>
+
+    <!-- Panel Carrito -->
+    <section id="panel-cart">
+        <article class="panel-cart-container">
+            <article class="panel-cart-title">
+                <h5 class="title">Tu Carrito</h5>
+                <button class="close" data-toggle="panel-cart"><i class="ti ti-close"></i></button>
+            </article>
+            <article class="panel-cart-content">
+                <table class="table-cart" id="tablaCarrito">
+                </table>
+                <article class="cart-summary">
+                    <article class="row text-lg">
+                        <article class="col-7 text-right text-muted">Total:</article>
+                        <article class="col-5" id="totalCompra"><strong></strong></article>
+                        </article>
+                </article>
+            </article>
+        </article>
+        <a href="../vistas/comanda.html" class="panel-cart-action btn btn-secondary btn-block btn-lg"><span>Pagar
+                Ahora</span></a>
+    </section>
+
+    <!-- Menu de la Juegueria -->
+    <section id="Carta" class="parallax-window" data-parallax="scroll" data-image-src="../img/antique-cafe-bg-02.jpg">
+        <main class="container mx-auto tm-container py-24 sm:py-48">
+            <article class="text-center mb-16">
+                <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Nuestro Menú
+                    de Jugueria</h2>
+            </article>
+            <section class="flex flex-col lg:flex-row justify-around items-center">
+                <section class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+                    <article class="flex items-start mb-6 tm-menu-item">
+                        <img src="../img/Sandwiches.png" alt="Image" class="rounded-md">
+                        <article class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Sandwiches</h3>
+                            <p class="text-white text-md sm:text-lg font-light mb-1">S $8.50</p>
+                            <p class="text-white text-md sm:text-lg font-light">L $10.50</p>
+                        </article>
+                    </article>
+                    <article class="flex items-start mb-6 tm-menu-item">
+                        <img src="../img/Hamburguesas.png" alt="Image" class="rounded-md">
+                        <article class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hamburguesas</h3>
+                            <p class="text-white text-md sm:text-lg font-light mb-1">S $9.50 . BG #544639</p>
+                            <p class="text-white text-md sm:text-lg font-light">L $12.50</p>
+                        </article>
+                    </article>
+                    <article class="flex items-start mb-6 tm-menu-item">
+                        <img src="../img/LasRellenas.png" alt="Image" class="rounded-md">
+                        <article class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Las Rellenas</h3>
+                            <p class="text-white text-md sm:text-lg font-light mb-1">M $11.75</p>
+                            <p class="text-white text-md sm:text-lg font-light">L $14.75</p>
+                        </article>
+                    </article>
+                    <article class="flex items-start mb-6 tm-menu-item">
+                        <img src="../img/Jugos.png" alt="Image" class="rounded-md">
+                        <article class="ml-3 sm:ml-6">
+                            <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Jugos</h3>
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Hot Chocolate</h3>
+                            <p class="text-white text-md sm:text-lg font-light">Size M $11.75 . L $14.75</p>
+                        </article>
+                    </article>
+                </section>
+
+                <section class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
+                    <article class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <article class="text-right mr-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Las Refrescantes</h3>
+                            <p class="text-white text-md sm:text-lg font-light mb-1">Small $10
+                            <p>
+                            <p class="text-white text-md sm:text-lg font-light">Large $15</p>
+                        </article>
+                        <img src="../img/LasRefrescantes.png" alt="Image" class="rounded-md">
+                    </article>
+                    <article class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <article class="text-right mr-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Postres</h3>
+                            <p class="text-white text-md sm:text-lg font-light mb-1">Small $12.50</p>
+                            <p class="text-white text-md sm:text-lg font-light">Large $16.50</p>
+                        </article>
+                        <img src="../img/Postres.png" alt="Image" class="rounded-md">
+                    </article>
+                    <article class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <article class="text-right mr-6">
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Bebidas Calientes</h3>
+                            <p class="text-white text-md sm:text-lg font-light mb-1">Small $14</p>
+                            <p class="text-white text-md sm:text-lg font-light">Large $18</p>
+                        </article>
+                        <img src="../img/BebidasCalientes.png" alt="Image" class="rounded-md">
+                    </article>
+                    <article class="flex items-start justify-end mb-6 tm-menu-item-2">
+                        <article class="text-right mr-6">
+                            <h3 class="text-lg sm:text-xl tm-text-yellow mb-1">Kekes</h3>
+                            <h3 class="text-lg sm:text-xl mb-2 sm:mb-3 tm-text-yellow">Iced Mocha</h3>
+                            <p class="text-white text-md sm:text-lg font-light">Small $10 . Large $15</p>
+                        </article>
+                        <img src="../img/Postres.png" alt="Image" class="rounded-md">
+                        </section>
+                </section>
+            </section>
+        </main>
+    </section>
+
+    <!-- Promociones -->
+
+    <!-- Nosotros -->
+    <section id="SobreNosotros" class="parallax-window" data-parallax="scroll"
+        data-image-src="../img/antique-cafe-bg-03.jpg">
+        <main class="container mx-auto tm-container py-24 sm:py-48">
+            <section class="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
+                <article class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
+                    <h2 class="mb-6 tm-text-green text-4xl font-medium">Nosotros</h2>
+                    <h2 class="tm-text-amarillo tm-text-2xl">Conoce más sobre nosotros</h2>
+                    <p class="mb-6 text-base leading-8">
+
+                        Los mejores sandwiches y jugos de Huaraz!
+                        Todo comienza un 17 de Abril de 1950...
+
+                        Un emprendedor de emociones Mario y una dama conocedora
+                        de la buena mesa Maria y con fino paladar, en la “capital
+                        de la eterna primavera” decidieron compartir sus conocimientos creando
+                        deliciosos sabores en base a frutas frescas, conmoviendo el exquisito paladar de los huaracinos.
+                        Desde entonces, la Jugueria Jacubº se convirtió en un icono de sabor y calidad huaracina para
+                        toda la eternidad.
+
+                        Jacub, Juguería
+                    </p>
+                    <p class="text-base leading-8">
+                        Que comentan sobre nosotros todos nuestros clientes
+                        <a rel="nofollow" href="../vistas/contactenos.html" target="_parent">AQUI NUESTRAS
+                            RESEÑAS</a>
+                    </p>
+                </article>
+                <a href="#Contactanos"
+                    class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md">
+                    <i class="far fa-comments mr-4"></i>
+                    Contactanos
+                </a>
+            </section>
+        </main>
+    </section>
+
+    <!-- Contactenos -->
+    <section id="Contactanos" class="parallax-window relative" data-parallax="scroll"
+        data-image-src="../img/antique-cafe-bg-04.jpg">
+        <main class="container mx-auto tm-container pt-24 pb-48 sm:py-48">
+            <section class="flex flex-col lg:flex-row justify-around items-center lg:items-stretch">
+                <main class="flex-1 rounded-xl px-10 py-12 m-5 bg-white bg-opacity-80 tm-item-container">
+                    <h2 class="text-3xl mb-6 tm-text-green">contáctenos</h2>
+                    <p class="mb-6 text-lg leading-8">
+                        Juguería Jacub es tu destino para la sectionersión y los juegos.
+                        Con una amplia selección de productos, estamos aquí para hacer que tus momentos sean
+                        inolvidables.
+                        ¡Contáctanos hoy mismo!
+                    </p>
+                    <p class="mb-10 text-lg">
+                        <span class="block mb-2">Tel: <a href="tel:0100200340"
+                                class="hover:text-yellow-600 transition">989 238 458</a></span>
+                        <span class="block">Email: <a href="mailto:info@company.com"
+                                class="hover:text-yellow-600 transition">jugueriajacub@hotmail.com</a></span>
+                    </p>
+                    <article class="text-center">
+                        <a href="https://www.google.com/maps"
+                            class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green">
+                            <i class="fas fa-map-marked-alt mr-8"></i>
+                            Abrir Ubicacion
+                        </a>
+                    </article>
+                </main>
+                <main class="flex-1 rounded-xl p-12 pb-14 m-5 bg-black bg-opacity-50 tm-item-container">
+                    <form action="" method="POST" class="text-lg">
+                        <input type="text" name="name"
+                            class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
+                            placeholder="Name" required="" />
+                        <input type="email" name="email"
+                            class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
+                            placeholder="Email" required="" />
+                        <textarea rows="6" name="message"
+                            class="input w-full bg-black border-b bg-opacity-0 text-white px-0 py-4 mb-4 tm-border-gold"
+                            placeholder="Message..." required=""></textarea>
+                        <article class="text-right">
+                            <button type="submit" class="text-white hover:text-yellow-500 transition">Envialo</button>
+                        </article>
+                    </form>
+                </main>
+            </section>
+            <footer class="absolute bottom-0 left-0 w-full">
+                <article
+                    class="text-white container mx-auto tm-container p-8 text-lg flex flex-col md:flex-row justify-between">
+                    <span>Copyright 2024 JugueriaJacub. Todos los derechos reservados por:</span>
+                    <span class="mt-5 md:mt-0">Diseñadores: <a href="https://www.tooplate.com" target="_parent">Broncano
+                            - Rojas - Flores</a></span>
+                </article>
+            </footer>
+        </main>
+    </section>
+
+     <!-- Section -->
+     <section class="section section-lg dark bg-dark">
+
+        <!-- BG Image -->
+        <article class="bg-image bg-parallax"><img loading="lazy"
+                src="https://sanagustin.pe/src/img/photos/banner-fresas.jpg" alt=""></article>
+
+        <article class="container text-center">
+            <li class="col-lg-7 push-lg-1">
+                <h2 class="mb-3"><b>¿Quieres engreir tu paladar?</b></h2>
+                <h5 class="mb2">¡Visita nuestra carta y escoge lo que mas te guste!</h5>
+                <a href="../vistas/carta.html" class="btn btn-lg btn-primary"><span>Ordena Ahora</span></a>
+            </li>
+        </article>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-footer dark">
+
+        <main class="container col-11">
+            <!-- Footer 2nd Row -->
+            <section class="footer-second-row row align-items-center">
+                <article class="col-lg-4 text-center text-md-left" style="padding:0;">
+                    <h6><b>Horario de Atención: </b></h6>
+                    <h6><b>Lunes a sábado: 08:00 a.m. - 12:55 p.m. y de 5:00 - 9:55 p.m.</b></h6>
+                    <h6><b>Domingo: 8:00 a.m. - 12:55 p.m.</b></h6>
+                    <h6><b>Teléfono fijo: 221033</b></h6>
+                    <h6><b>Celular: 949623222</b></h6>
+                    <h6><b>Correo: jugueriajacub@gmail.com</b></h6>
+                </article>
+                <li class="col-lg-4 text-center">
+                    <a href="../vistas/index.html"><img loading="lazy"
+                            src="../img/logo.png" alt="" width="150" class="mt-5 mb-5"></a>
+                </li>
+                <article class="col-lg-4 col-md-6 text-center text-md-right">
+                    <a href="#" class="icon icon-social icon-circle icon-facebook"
+                    style="background-color:#415e9b; max-width: 80px; height: auto;">
+                    <i class="fa-brands fa-facebook"></i></a>
+
+                <a href="#" class="icon icon-social icon-circle icon-instagram"
+                    style="background-color:#ec1d59; max-width: 80px; height: auto;">
+                    <i class="fa-brands fa-instagram"></i></a>
+                </article>
+            </section>
+        </main>
+
+        <article class="container text-center">
+            <span class="text-sm">Copyright Juguería Jacub 2024©<br>Todos los derechos reservados.</span>
+        </article>
+
+        <!-- Back To Top -->
+        <a href="#" id="back-to-top"><i class="ti ti-angle-up"></i></a>
+
+    </footer>
+
+
+    <!-- JS Plugins -->
+<script src="https://sanagustin.pe/src/plugins/jquery/dist/jquery.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/tether/dist/js/tether.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/slick-carousel/slick/slick.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/jquery.appear/jquery.appear.js"></script>
+<script src="https://sanagustin.pe/src/plugins/jquery.scrollto/jquery.scrollTo.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/jquery.localscroll/jquery.localScroll.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/twitter-fetcher/js/twitterFetcher_min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/skrollr/dist/skrollr.min.js"></script>
+<script src="https://sanagustin.pe/src/plugins/animsition/dist/js/animsition.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://sanagustin.pe/src/js/alertify.min.js"></script>
+
+<!-- JS Core -->
+<script src="https://sanagustin.pe/src/js/core.min.js"></script>
+<script src="https://sanagustin.pe/src/js/carrito.min.js"></script>
+
+
+    <script src = "../js/jquery-3.6.0.min.js" ></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+
+</body>
+
+</html>

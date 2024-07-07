@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueria Jacub - El Sabor de las Alturas</title>
+    <!-- logo de la jugueria -->
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/all.min.css"> <!-- fontawesome -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+
+     <!-- CSS Plugins -->
+     <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/bootstrap/dist/css/bootstrap.min.css" />
+     <!-- CSS Theme -->
+     <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/theme-green.min.css" /> 
+    
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo_menu1.css">
+    <link rel="stylesheet" href="../css/estilo_menu2.css">
+    <link rel="stylesheet" href="../css/estilo_menu3.css">
+    <link rel="stylesheet" href="../css/estilo_promos.css">
+    <link rel="stylesheet" href="../css/nosotros.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+</head>
+
+<body>
+    <!-- Intro -->
+    <header>
+        <nav class="module module-navigation mr-4" style="font-size: 1.3rem;">
+            <ul id="nav-main" class="nav nav-main">
+                <li><a href="../vistas/index.html" class="nav-item nav-link">Principal</a></li>
+                <li><a href="../vistas/carta.html" class="nav-item nav-link">Carta</a></li>
+                <li><a href="../vistas/promos.html" class="nav-item nav-link">Promos</a></li>
+                <li><a href="../vistas/comanda.html" class="nav-item nav-link">Comanda</a></li>
+                <li class="ancho-menu" class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown" class="dropdown-menu m-0">
+                        <li class="alinea_derecha"><a href="../vistas/nosotros.html" class="dropdown-item">Sobre
+                                Nosotros</a></li>
+                        <li class="alinea_derecha"><a href="../vistas/reseñas.html"
+                                class="dropdown-item">Reseñas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../vistas/contactenos.html" class="nav-item nav-link">Contáctanos</a></li>
+
+                <li class="col-md-2">
+                    <a href="#" class="nav-item nav-link" class="module module-cart right" data-toggle="panel-cart" id=verCarrito>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="notification" id="notif"></span>
+                        </span>
+                        <span class="cart-value" id="totalCart"></span>
+                    </a>
+                </li>
+
+                <li class="alinea_derecha" class="nav-item">
+                    <a class="nav-link" href="../vistas/login.html"> <i class="fa-solid fa-user" aria-hidden="true"></i> Login</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Imagen-->
+    <article class="page-title bg-cabecera light">
+        <main class="bg-image bg-parallax">
+        </main>
+        <article class="container">
+            <ul class="row">
+                <li class="col-lg-8 push-lg-4">
+                    <h1 class="mb-0"><b>Nosotros</b></h1>
+                </li>
+            </ul>
+        </article>
+    </article>
+
+    <!-- Nosotros -->
+    <section id="SobreNosotros" class="parallax-window" data-parallax="scroll"
+        data-image-src="../img/antique-cafe-bg-03.jpg">
+        <main class="container mx-auto tm-container py-24 sm:py-48">
+            <section class="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
+                <article class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
+                    <h2 class="mb-6 tm-text-green text-4xl font-medium">Nosotros</h2>
+                    <h2 class="tm-text-amarillo tm-text-2xl">Conoce más sobre nosotros</h2>
+                    <p class="mb-6 text-base leading-8">
+
+                        Los mejores sandwiches y jugos de Huaraz!
+                        Todo comienza un 17 de Abril de 1950...
+
+                        Un emprendedor de emociones Mario y una dama conocedora
+                        de la buena mesa Maria y con fino paladar, en la “capital
+                        de la eterna primavera” decidieron compartir sus conocimientos creando
+                        deliciosos sabores en base a frutas frescas, conmoviendo el exquisito paladar de los huaracinos.
+                        Desde entonces, la Jugueria Jacubº se convirtió en un icono de sabor y calidad huaracina para
+                        toda la eternidad.
+
+                        Jacub, Juguería
+                    </p>
+                    <p class="text-base leading-8">
+                        Que comentan sobre nosotros todos nuestros clientes
+                        <a rel="nofollow" href="../vistas/reseñas.html" target="_parent">AQUI NUESTRAS
+                            RESEÑAS</a>
+                    </p>
+                </article>
+                <a href="../vistas/contactenos.html"
+                    class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md">
+                    <i class="far fa-comments mr-4"></i>
+                    Contactanos
+                </a>
+            </section>
+        </main>
+    </section>  
+    <footer>
+
+    </footer>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+
+</body>
+
+</html>

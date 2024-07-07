@@ -1,0 +1,37 @@
+:root {
+    --marron: 176, 93, 75;
+    --verde_oscuro: 24, 126, 164 ;
+
+    --blanco: 255,255,255;
+    --negra: 0,0,0;
+    --verde_claro: 43, 221, 15;
+}
+
+/*color del navegable*/
+nav{
+    background-color: rgba(0, 0, 0, 0.300);
+    color: rgb(var(--blanco));
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+}
+
+nav li{
+    display: inline;
+    padding: 2%;
+}
+
+/*enlace no visitado*/
+header nav ul li{
+    display: inline;
+    padding: 0.0.0.0.5%;
+}
+
+/*mouse pasa por encima*/
+header nav ul li a{
+    text-decoration: none;
+}
+
+/*click en el enlace*/
+header nav ul li a:hover{
+    color: rgb(var(--verde_claro));
+}
+

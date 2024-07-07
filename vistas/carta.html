@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueria Jacub - El Sabor de las Alturas</title>
+    <!-- logo de la jugueria -->
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"
+    rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/all.min.css"> <!-- fontawesome -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+    <!-- Customized Bootstrap Stylesheet -->
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- CSS Theme -->
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/theme-green.min.css" />
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/animsition/dist/css/animsition.min.css" />
+
+    <!-- CSS Icons -->
+    <link rel="stylesheet" href="https://sanagustin.pe/src/css/themify-icons.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/font-awesome/css/font-awesome.min.css" />
+
+    <!-- CSS Theme -->
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/theme-green.min.css" />
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/bootstrap.min.css" />
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/default.min.css" />
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/semantic.min.css" />
+    <link rel="stylesheet" href="https://sanagustin.pe/src/css/alertify.min.css" />
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo_menu1.css">
+    <link rel="stylesheet" href="../css/estilo_menu2.css">
+    <link rel="stylesheet" href="../css/estilo_menu3.css">
+    <link rel="stylesheet" href="../css/estilo_carta.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Intro -->
+    <header>
+            <nav class="module module-navigation mr-4" style="font-size: 1.3rem;">
+                <ul id="nav-main" class="nav nav-main">
+                    <li><a href="../vistas/index.html" class="nav-item nav-link">Principal</a></li>
+                    <li><a href="../vistas/carta.html" class="nav-item nav-link">Carta</a></li>
+                    <li><a href="../vistas/promos.html" class="nav-item nav-link">Promos</a></li>
+                    <li><a href="../vistas/comanda.html" class="nav-item nav-link">Comanda</a></li>
+                    <li class="ancho-menu" class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nosotros</a>
+                        <ul class="dropdown" class="dropdown-menu m-0">
+                            <li class="alinea_derecha"><a href="../vistas/nosotros.html" class="dropdown-item">Sobre
+                                    Nosotros</a></li>
+                            <li class="alinea_derecha"><a href="../vistas/reseñas.html"
+                                    class="dropdown-item">Reseñas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="../vistas/contactenos.html" class="nav-item nav-link">Contáctanos</a></li>
+
+                    <li class="col-md-2">
+                        <a href="#" class="nav-item nav-link" class="module module-cart right" data-toggle="panel-cart" id=verCarrito>
+                            <span class="cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="notification" id="notif"></span>
+                            </span>
+                            <span class="cart-value" id="totalCart"></span>
+                        </a>
+                    </li>
+
+                    <li class="alinea_derecha" class="nav-item">
+                        <a class="nav-link" href="../vistas/login.html"> <i class="fa-solid fa-user" aria-hidden="true"></i> Login</a>
+                      </li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Cabecera - Movil -->
+    <header id="header-mobile" class="light">
+
+        <section class="module module-nav-toggle">
+            <a href="#" id="nav-toggle"
+                data-toggle="panel-mobile"><span></span><span></span><span></span><span></span></a>
+        </section>
+
+        <section class="module module-logo">
+            <a href=" ">
+                <img loading="lazy" src=" " alt="">
+            </a>
+        </section>
+        <a href="#" class="module module-cart" data-toggle="panel-cart" id="verCarritoMobile">
+            <i class="ti ti-shopping-cart"></i>
+            <span class="notification" id="notifMobile"></span>
+        </a>
+
+    </header>
+
+    <!-- Panel Carrito -->
+    <section id="panel-cart">
+        <article class="panel-cart-container">
+            <article class="panel-cart-title">
+                <h5 class="title">Tu Carrito</h5>
+                <button class="close" data-toggle="panel-cart"><i class="ti ti-close"></i></button>
+            </article>
+            <article class="panel-cart-content">
+                <table class="table-cart" id="tablaCarrito">
+                </table>
+                <article class="cart-summary">
+                    <article class="row text-lg">
+                        <article class="col-7 text-right text-muted">Total:</article>
+                        <article class="col-5" id="totalCompra"><strong></strong></article>
+                        </article>
+                </article>
+            </article>
+        </article>
+        <a href="../vistas/comanda.html" class="panel-cart-action btn btn-secondary btn-block btn-lg"><span>Pagar
+                Ahora</span></a>
+    </section>
+
+    <!-- Titulo -->
+    <article class="page-title bg-cabecera light">
+        <main class="bg-image bg-parallax">
+        </main>
+        <article class="container">
+            <ul class="row">
+                <li class="col-lg-8 push-lg-4">
+                    <h1 class="mb-0"><b>Carta</b></h1>
+                </li>
+            </ul>
+        </article>
+    </article>
+
+
+    <!-- Page Content -->
+    <section class="page-content" class="section bg-light">
+        <article class="container col-12">
+            <article class="row">
+                <main class="col-xl-5 push-xl-7 col-lg-6 push-lg-6">
+                    <article class="shadow bg-white stick-to-content mb-4">
+                        <figure class="bg-footer dark p-4">
+                            <h5 class="mb-0">Tu Orden</h5>
+                        </figure>
+                        <table class="table-cart" id="tablePago">
+                        </table>
+                        <aside class="cart-summary">
+                            <main class="row">
+                                <article class="col-7 text-right text-muted">Total Compra:</article>
+                                <article class="col-5" id="totalCompraPagar">S/ 0.00</article>
+                            </main>
+                            <main class="row" hidden>
+                                <article class="col-7 text-right text-muted">Descuento 10% Web :</article>
+                                <article class="col-5 price text-success" id="descuentoWebPago">S/ 0.00</article>
+                            </main>
+                            <main class="row">
+                                <article class="col-7 text-right text-muted">Delivery:</article>
+                                <article class="col-5" id="precioDelivery">S/ 0.00</article>
+                            </main>
+                            <hr class="hr-sm">
+                            <article class="row text-lg">
+                                <article class="col-7 text-right text-muted">Total:</article>
+                                <article class="col-5" id="totalFinal">S/ 0.00</article>
+                            </article>
+                        </aside>
+                    </article>
+                </main>
+
+                <main class="col-xl-7 pull-xl-5 col-lg-6 pull-lg-6" class="container">
+                    <main class="row no-gutters">
+                        <article class="col-md-10 push-md-1" role="tablist">
+                            <!-- Menu Category -->
+                            <main id="1" class="menu-category">
+                                <header class="menu-category-title collapse-toggle" role="tab" data-target="#Sandwiches"
+                                    data-toggle="collapse" aria-expanded="false">
+                                    <figure class="bg-image">
+                                        <img loading="lazy" src="https://sanagustin.pe/src/img/photos/Sandwiches.jpg"
+                                            alt="">
+                                        <figcaption>
+                                            <h2 class="title">Sandwiches</h2>
+                                        </figcaption>
+                                    </figure>
+                                </header>
+                                <article id="Sandwiches" class="menu-category-content collapse">
+                                    <!-- Menu Item-->
+                                    <ul>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Butifarra</b></h5>
+                                                    <span class="text-dark text-lg">Butifarra (jamón del país)</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="105">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        16.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm add-direct"
+                                                        data-target="" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Filete de Pollo</b></h5>
+                                                    <span class="text-dark text-lg">Filete de Pollo</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="104">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        13.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal">
+                                                        <span style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de asado</b></h5>
+                                                    <span class="text-dark text-lg">Pan francés con asado en
+                                                        tajadas</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="7">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        16.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de chancho asado tipo oriental</b></h5>
+                                                    <span class="text-dark text-lg">Pan francés con trozos de costilla
+                                                        de
+                                                        cerdo</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="6">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        16.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de chicharrón</b></h5>
+                                                    <span class="text-dark text-lg">Pan francés con trozos de
+                                                        chicharrón</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="4">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        16.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de hot dog</b></h5>
+                                                    <span class="text-dark text-lg">Nuestro clásico pan especial de la
+                                                        casa
+                                                        con
+                                                        hot dog</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="10">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        10.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de lechón</b></h5>
+                                                    <span class="text-dark text-lg">Pan francés con lechón al horno en
+                                                        tajadas</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="3">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        16.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de lomito</b></h5>
+                                                    <span class="text-dark text-lg">Pan francés con lomo en
+                                                        tajadas</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="5">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        16.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de lomito con huevo</b></h5>
+                                                    <span class="text-dark text-lg"></span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="98">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        18.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de lomito con Jamón</b></h5>
+                                                    <span class="text-dark text-lg"></span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="100">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        20.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de lomito con Jamón y Queso</b></h5>
+                                                    <span class="text-dark text-lg"></span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="101">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        22.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de lomito con Queso</b></h5>
+                                                    <span class="text-dark text-lg"></span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="99">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        19.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de lomito con tocino</b></h5>
+                                                    <span class="text-dark text-lg"></span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="103">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        20.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de lomito San Agustin</b></h5>
+                                                    <span class="text-dark text-lg"></span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="102">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        24.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de pavo</b></h5>
+                                                    <span class="text-dark text-lg">Pan francés con pavo al horno en
+                                                        tajadas</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="2">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        16.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de pollo</b></h5>
+                                                    <span class="text-dark text-lg">Pan francés con pollo
+                                                        deshilachado</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="1">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        13.50</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Sandwich de ternera</b></h5>
+                                                    <span class="text-dark text-lg">Nuestro clásico pan especial de la
+                                                        casa
+                                                        con
+                                                        hot dog de Ternera</span>
+                                                </article>
+                                                <article class="col-sm-6 text-sm-right" prod-id="11">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        10.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm open-add"
+                                                        data-target="#sandwichModal" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </article>
+                                            </main>
+                                        </li>
+                                        <li class="menu-item menu-list-item">
+                                            <main class="row align-items-center">
+                                                <article class="col-sm-6 mb-2 mb-sm-0">
+                                                    <h5 class="mb-1"><b>Taper</b></h5>
+                                                    <span class="text-dark text-lg">Taper para salsas</span>
+                                                </article>
+                                                <section class="col-sm-6 text-sm-right" prod-id="76">
+                                                    <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                        1.00</span>
+                                                    <button class="btn btn-outline-primary btn-sm add-direct"
+                                                        data-target="" data-toggle="modal"><span
+                                                            style="pointer-events:none;">Añadir al
+                                                            carrito</span></button>
+                                                </section>
+                                            </main>
+                                        </li>
+                                    </ul>
+                                </article>
+                            </main>
+                            <!-- Menu Category -->
+                            <main id="2" class="menu-category">
+                                <header class="menu-category-title collapse-toggle" role="tab"
+                                    data-target="#Hamburguesas" data-toggle="collapse" aria-expanded="false">
+                                    <figure class="bg-image">
+                                        <img loading="lazy" src="https://sanagustin.pe/src/img/photos/Hamburguesas.jpg"
+                                            alt="">
+                                        <figcaption>
+                                            <h2 class="title">Hamburguesas</h2>
+                                        </figcaption>
+                                    </figure>
+                                </header>
+                                <article id="Hamburguesas" class="menu-category-content collapse">
+                                    <!-- Menu Item-->
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chorizo con Jamón</b></h5>
+                                                <span class="text-dark text-lg">Pan francés con chorizo y jamón</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="97">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    16.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chorizo con Jamón y Queso</b></h5>
+                                                <span class="text-dark text-lg">Pan francés con chorizo jamón y
+                                                    queso</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="85">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    18.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chorizo con Queso</b></h5>
+                                                <span class="text-dark text-lg">Pan francés con chorizo y queso</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="83">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    14.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chorizo con Tocino</b></h5>
+                                                <span class="text-dark text-lg">Pan francés con chorizo tocino</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="84">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    16.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chorizo Royal</b></h5>
+                                                <span class="text-dark text-lg">Pan francés con chorizo y huevo</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="82">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    13.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chorizo San Agustín</b></h5>
+                                                <span class="text-dark text-lg">Pan francés con chorizo, jamón, queso,
+                                                    huevo
+                                                    y tocino</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="17">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    22.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chorizo simple</b></h5>
+                                                <span class="text-dark text-lg">Pan francés con chorizo</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="16">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    12.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Hamburguesa con Jamón o Tocino</b></h5>
+                                                <span class="text-dark text-lg">Pan de yema con hamburguesa de carne
+                                                    jamón o
+                                                    tocino</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="79">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    16.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Hamburguesa con Jamón y Queso</b></h5>
+                                                <span class="text-dark text-lg">Pan de yema con hamburguesa de carne
+                                                    jamón y
+                                                    queso</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="80">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    18.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Hamburguesa con queso</b></h5>
+                                                <span class="text-dark text-lg">Pan de yema con hamburguesa de carne y
+                                                    queso</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="77">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    14.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Hamburguesa hawaiana</b></h5>
+                                                <span class="text-dark text-lg">Pan de yema con hamburguesa de carne y
+                                                    piña</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="13">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    13.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                            </section>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Hamburguesa Royal</b></h5>
+                                                <span class="text-dark text-lg">Pan de yema con hamburguesa de carne y
+                                                    huevo</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="78">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    12.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Hamburguesa San Agustín</b></h5>
+                                                <span class="text-dark text-lg">Pan de yema con hamburguesa de carne,
+                                                    jamón,
+                                                    queso, huevo y tocino</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="14">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    22.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Hamburguesa simple</b></h5>
+                                                <span class="text-dark text-lg">Pan de yema con hamburguesa de
+                                                    carne</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="12">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    12.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Hamburguesa vegetariana</b></h5>
+                                                <span class="text-dark text-lg">Pan de yema con hamburguesa a base de
+                                                    soya</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="15">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    13.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#burgerModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                    <li class="menu-item menu-list-item">
+                                        <main class="row align-items-center">
+                                            <article class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Taper</b></h5>
+                                                <span class="text-dark text-lg">Taper para salsas</span>
+                                            </article>
+                                            <article class="col-sm-6 text-sm-right" prod-id="75">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    1.00</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </article>
+                                        </main>
+                                    </li>
+                                </article>
+                            </main>
+                            <!-- Menu Category -->
+                            <main id="3" class="menu-category">
+                                <header class="menu-category-title collapse-toggle" role="tab"
+                                    data-target="#LasRellenas" data-toggle="collapse" aria-expanded="false">
+                                    <figure class="bg-image"><img loading="lazy"
+                                            src="https://sanagustin.pe/src/img/photos/LasRellenas.jpg" alt=""></figure>
+                                    <h2 class="title">Las Rellenas</h2>
+                                </header>
+                                <article id="LasRellenas" class="menu-category-content collapse">
+                                    <!-- Menu Item-->
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Empanada</b></h5>
+                                                <span class="text-dark text-lg">Nuestra clásica empanada de carne
+                                                    de Lunes a Sábado (No Domingos)</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="21">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    7.50</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#rellenasModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Humita</b></h5>
+                                                <span class="text-dark text-lg">La humita que marca la diferencia</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="20">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    10.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#rellenasModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Papa rellena</b></h5>
+                                                <span class="text-dark text-lg">Nuestra clásica papa rellena
+                                                    de Lunes a Sábado (No Domingos)</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="18">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    10.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#rellenasModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Tamal</b></h5>
+                                                <span class="text-dark text-lg">El tamal que nunca falta en el
+                                                    desayuno</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="19">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    9.50</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#rellenasModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Taper</b></h5>
+                                                <span class="text-dark text-lg">Tapar para papa Rellena, Humita,
+                                                    Tamal</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="73">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    1.00</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </article>
+                            </main>
+                            <!-- Menu Category -->
+                            <main id="4" class="menu-category">
+                                <header class="menu-category-title collapse-toggle" role="tab" data-target="#Jugos"
+                                    data-toggle="collapse" aria-expanded="false">
+                                    <figure class="bg-image"><img loading="lazy"
+                                            src="https://sanagustin.pe/src/img/photos/Jugos.jpg" alt="">
+                                    </figure>
+                                    <h2 class="title">Jugos</h2>
+                                </header>
+                                <article id="Jugos" class="menu-category-content collapse">
+                                    <!-- Menu Item-->
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo batido</b></h5>
+                                                <span class="text-dark text-lg">Nuestro clásico batido, producto bandera
+                                                    de
+                                                    nuestras cocinas</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="22">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    14.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de durazno</b></h5>
+                                                <span class="text-dark text-lg">Jugo a base de los mejores duraznos
+                                                    cultivados por nuestros agricultores peruanos</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="40">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    19.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de durazno con leche</b></h5>
+                                                <span class="text-dark text-lg">Jugo de durazno con leche</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="94">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    19.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de fresas</b></h5>
+                                                <span class="text-dark text-lg">Jugo a base de nuestra mejor selección
+                                                    de
+                                                    fresas</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="28">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    19.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de fresas con leche</b></h5>
+                                                <span class="text-dark text-lg">Jugo a base de nuestra mejor selección
+                                                    de
+                                                    fresas con leche</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="25">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    19.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de mango</b></h5>
+                                                <span class="text-dark text-lg">Jugo a base de los mejores mangos
+                                                    cultivados
+                                                    por nuestros agricultores peruanos</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="37">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    19.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de mango con leche</b></h5>
+                                                <span class="text-dark text-lg">Jugo de mango con leche</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="89">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    19.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de naranja exprimida</b></h5>
+                                                <span class="text-dark text-lg">Jugo de naranja totalmente natural. De
+                                                    nuestro exprimidor a tu vaso</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="31">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    17.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de papaya</b></h5>
+                                                <span class="text-dark text-lg">Jugo a base de las mejores papayas de
+                                                    nuestros agricultores peruanos</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="34">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    14.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Jugo de piña</b></h5>
+                                                <span class="text-dark text-lg">Jugo a base de las mejores piñas de
+                                                    nuestros
+                                                    agricultores peruanos</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="43">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    14.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Ponche de frutas</b></h5>
+                                                <span class="text-dark text-lg">Nuestro delicioso ponche a base de
+                                                    algarrobina norteña, vino y la mejor selección de nuestras frutas
+                                                    preferidas</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="46">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    12.50</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Ponche de leche</b></h5>
+                                                <span class="text-dark text-lg">Nuestro delicioso ponche a base de
+                                                    algarrobina norteña, leche y un toque de vino</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="48">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    12.50</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#jugosModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </article>
+                            </main>
+                            <!-- Menu Category -->
+                            <main id="5" class="menu-category">
+                                <header class="menu-category-title collapse-toggle" role="tab"
+                                    data-target="#LasRefrescantes" data-toggle="collapse" aria-expanded="false">
+                                    <figure class="bg-image"><img loading="lazy"
+                                            src="https://sanagustin.pe/src/img/photos/LasRefrescantes.jpg" alt="">
+                                    </figure>
+                                    <h2 class="title">Las Refrescantes</h2>
+                                </header>
+                                <article id="LasRefrescantes" class="menu-category-content collapse">
+                                    <!-- Menu Item-->
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Agua</b></h5>
+                                                <span class="text-dark text-lg">San Luis sin gas, San Luis con
+                                                    gas</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="55">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    4.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#aguaModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chicha morada</b></h5>
+                                                <span class="text-dark text-lg">La rica chicha morada que todos
+                                                    conocemos
+                                                    desde la niñez. Un clásico peruano</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="50">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    10.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#refrescaModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Gaseosa</b></h5>
+                                                <span class="text-dark text-lg">Coca Cola, Inca Kola, Fanta y
+                                                    Sprite</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="54">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    5.50</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#gaseosaModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Milkshake</b></h5>
+                                                <span class="text-dark text-lg">Fresa (Sabor sujeto a
+                                                    disponibilidad)</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="53">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    15.00</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#refrescaModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </article>
+                            </main>
+                            <!-- Menu Category -->
+                            <main id="6" class="menu-category">
+                                <header class="menu-category-title collapse-toggle" role="tab" data-target="#Postres"
+                                    data-toggle="collapse" aria-expanded="false">
+                                    <figure class="bg-image"><img loading="lazy"
+                                            src="https://sanagustin.pe/src/img/photos/Postres.jpg" alt="">
+                                    </figure>
+                                    <h2 class="title">Postres</h2>
+                                </header>
+                                <article id="Postres" class="menu-category-content collapse">
+                                    <!-- Menu Item-->
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Taper</b></h5>
+                                                <span class="text-dark text-lg">Taper para torta de chocolate</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="74">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    1.00</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Torta de chocolate</b></h5>
+                                                <span class="text-dark text-lg">Deliciosa porción de torta de chocolate
+                                                    para
+                                                    completar el pedido perfecto</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="56">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    11.00</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </article>
+                            </main>
+                            <!-- Menu Category -->
+                            <main id="7" class="menu-category">
+                                <header class="menu-category-title collapse-toggle" role="tab"
+                                    data-target="#BebidasCalientes" data-toggle="collapse" aria-expanded="false">
+                                    <figure class="bg-image"><img loading="lazy"
+                                            src="https://sanagustin.pe/src/img/photos/BebidasCalientes.jpg" alt="">
+                                    </figure>
+                                    <h2 class="title">Bebidas Calientes</h2>
+                                </header>
+                                <article id="BebidasCalientes" class="menu-category-content collapse">
+                                    <!-- Menu Item-->
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Café americano</b></h5>
+                                                <span class="text-dark text-lg">Delicioso café britt recién pasado en
+                                                    casa</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="62">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    10.00</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Cappuccino</b></h5>
+                                                <span class="text-dark text-lg">Clásica bebida caliente con el mejor
+                                                    café
+                                                    britt</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="64">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    12.00</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Chocolate caliente</b></h5>
+                                                <span class="text-dark text-lg">Nuestro delicioso chocolate caliente,
+                                                    perfecto calentarnos en el invierno</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="58">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    8.50</span>
+                                                <button class="btn btn-outline-primary btn-sm open-add"
+                                                    data-target="#calienteModal" data-toggle="modal"><span
+                                                        style="pointer-events:none;">Añadir al carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Expresso</b></h5>
+                                                <span class="text-dark text-lg">Shot de café britt, perfecto para
+                                                    levantarte
+                                                    en las mañanas</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="63">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    9.00</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Leche con milo/café</b></h5>
+                                                <span class="text-dark text-lg">Leche fresca de vaca con milo o
+                                                    café</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="57">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    8.50</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Leche sola</b></h5>
+                                                <span class="text-dark text-lg">Leche fresca de vaca</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="60">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    7.00</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section class="menu-item menu-list-item">
+                                        <section class="row align-items-center">
+                                            <section class="col-sm-6 mb-2 mb-sm-0">
+                                                <h5 class="mb-1"><b>Manzanilla/Té/Anís</b></h5>
+                                                <span class="text-dark text-lg">Las clásicas infusiones para calentar
+                                                    los
+                                                    días más fríos</span>
+                                            </section>
+                                            <section class="col-sm-6 text-sm-right" prod-id="61">
+                                                <span class="text-lg mr-4"><span class="text-muted">desde</span> S/
+                                                    6.50</span>
+                                                <button class="btn btn-outline-primary btn-sm add-direct" data-target=""
+                                                    data-toggle="modal"><span style="pointer-events:none;">Añadir al
+                                                        carrito</span></button>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </article>
+                            </main>
+                        </article>
+                    </main>
+                </main>
+            </article>
+        </article>
+    </section>
+
+    <!-- Section -->
+    <section class="section section-lg dark bg-dark">
+
+        <!-- BG Image -->
+        <article class="bg-image bg-parallax"><img loading="lazy"
+                src="https://sanagustin.pe/src/img/photos/banner-fresas.jpg" alt=""></article>
+
+        <article class="container text-center">
+            <li class="col-lg-7 push-lg-1">
+                <h2 class="mb-3"><b>¿Quieres engreir tu paladar?</b></h2>
+                <h5 class="mb2">¡Visita nuestra carta y escoge lo que mas te guste!</h5>
+                <a href="../vistas/carta.html" class="btn btn-lg btn-primary"><span>Ordena Ahora</span></a>
+            </li>
+        </article>
+
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="bg-footer dark">
+
+        <main class="container col-11">
+            <!-- Footer 2nd Row -->
+            <section class="footer-second-row row align-items-center">
+                <article class="col-lg-4 text-center text-md-left" style="padding:0;">
+                    <h6><b>Horario de Atención: </b></h6>
+                    <h6><b>Lunes a sábado: 08:00 a.m. - 12:55 p.m. y de 5:00 - 9:55 p.m.</b></h6>
+                    <h6><b>Domingo: 8:00 a.m. - 12:55 p.m.</b></h6>
+                    <h6><b>Teléfono fijo: 221033</b></h6>
+                    <h6><b>Celular: 949623222</b></h6>
+                    <h6><b>Correo: jugueriajacub@gmail.com</b></h6>
+                </article>
+                <li class="col-lg-4 text-center">
+                    <a href="../vistas/index.html"><img loading="lazy" src="../img/logo.png" alt="" width="150"
+                            class="mt-5 mb-5"></a>
+                </li>
+                <article class="col-lg-4 col-md-6 text-center text-md-right">
+                    <a href="#" class="icon icon-social icon-circle icon-facebook"
+                        style="background-color:#415e9b; max-width: 80px; height: auto;">
+                        <i class="fa-brands fa-facebook"></i></a>
+
+                    <a href="#" class="icon icon-social icon-circle icon-instagram"
+                        style="background-color:#ec1d59; max-width: 80px; height: auto;">
+                        <i class="fa-brands fa-instagram"></i></a>
+                </article>
+            </section>
+        </main>
+
+        <article class="container text-center">
+            <span class="text-sm">Copyright Juguería Jacub 2024©<br>Todos los derechos reservados.</span>
+        </article>
+
+        <!-- Back To Top -->
+        <a href="#" id="back-to-top"><i class="ti ti-angle-up"></i></a>
+
+    </footer>
+
+    <!-- JS Plugins -->
+    <script src="https://sanagustin.pe/src/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/tether/dist/js/tether.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/jquery.appear/jquery.appear.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/jquery.scrollto/jquery.scrollTo.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/jquery.localscroll/jquery.localScroll.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/twitter-fetcher/js/twitterFetcher_min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/skrollr/dist/skrollr.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/animsition/dist/js/animsition.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://sanagustin.pe/src/js/alertify.min.js"></script>
+
+    <!-- JS Core -->
+    <script src="https://sanagustin.pe/src/js/core.min.js"></script>
+    <script src="https://sanagustin.pe/src/js/carrito.min.js"></script>
+
+</body>
+
+</html>

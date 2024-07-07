@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueria Jacub - El Sabor de las Alturas</title>
+    <!-- logo de la jugueria -->
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="../css/all.min.css"> <!-- fontawesome -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+    
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="https://sanagustin.pe/src/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- CSS Theme -->
+    <link id="theme" rel="stylesheet" href="https://sanagustin.pe/src/css/themes/theme-green.min.css" />
+
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/estilo_menu1.css">
+    <link rel="stylesheet" href="../css/estilo_menu2.css">
+    <link rel="stylesheet" href="../css/estilo_menu3.css">
+    <link rel="stylesheet" href="../css/estilo_promos.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="module module-navigation mr-4" style="font-size: 1.3rem;">
+            <ul id="nav-main" class="nav nav-main">
+                <li><a href="../vistas/index.html" class="nav-item nav-link">Principal</a></li>
+                <li><a href="../vistas/carta.html" class="nav-item nav-link">Carta</a></li>
+                <li><a href="../vistas/promos.html" class="nav-item nav-link">Promos</a></li>
+                <li><a href="../vistas/comanda.html" class="nav-item nav-link">Comanda</a></li>
+                <li class="ancho-menu" class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown" class="dropdown-menu m-0">
+                        <li class="alinea_derecha"><a href="../vistas/nosotros.html" class="dropdown-item">Sobre
+                                Nosotros</a></li>
+                        <li class="alinea_derecha"><a href="../vistas/reseñas.html"
+                                class="dropdown-item">Reseñas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../vistas/contactenos.html" class="nav-item nav-link">Contáctanos</a></li>
+
+                <li class="col-md-2">
+                    <a href="#" class="nav-item nav-link" class="module module-cart right" data-toggle="panel-cart" id=verCarrito>
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="notification" id="notif"></span>
+                        </span>
+                        <span class="cart-value" id="totalCart"></span>
+                    </a>
+                </li>
+
+                <li class="alinea_derecha" class="nav-item">
+                    <a class="nav-link" href="../vistas/login.html"> <i class="fa-solid fa-user" aria-hidden="true"></i> Login</a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Content
+     <section id="marco-medio">        
+        <form id="marco">
+            <h4 id="titulo"> Combo Amigos</h4>
+            <h1> ¡Es hora de disfrutar el sabor de Jacub en pareja a cualquier hora!</h2>
+            <h2> 2 jarra Jugo surtido de 1L </h2>
+            <h2> 4 Sandwichs de pollo </h2>
+            <table class="comanda">
+                <label>
+                    <input type="checkbox" name="lechuga"> Lechuga
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mayonesa picante
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Aji Rocoto
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Aji Amarillo
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lechuga"> Ketchup
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mostaza
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Cebolla
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Apio
+                </label>
+                <p class="precio">Precio: S/ 32.00</p>
+            </table>
+            <input type="submit" value="Agregar a la comanda">
+        </form>
+
+        <form id="marco">
+            <h4 id="titulo"> Combo Amigos</h4>
+            <h1> ¡Es hora de disfrutar el sabor de Jacub en pareja a cualquier hora!</h2>
+            <h2> 2 jarra Jugo surtido de 1L </h2>
+            <h2> 4 Sandwichs de pollo </h2>
+            <table class="comanda">
+                <label>
+                    <input type="checkbox" name="lechuga"> Lechuga
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mayonesa picante
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Aji Rocoto
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Aji Amarillo
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lechuga"> Ketchup
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mostaza
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Cebolla
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Apio
+                </label>
+                <p class="precio">Precio: S/ 32.00</p>
+            </table>
+            <input type="submit" value="Agregar a la comanda">
+        </form>
+
+        <form id="marco">
+            <h4 id="titulo"> Combo Amigos</h4>
+            <h1> ¡Es hora de disfrutar el sabor de Jacub en pareja a cualquier hora!</h2>
+            <h2> 2 jarra Jugo surtido de 1L </h2>
+            <h2> 4 Sandwichs de pollo </h2>
+            <table class="comanda">
+                <label>
+                    <input type="checkbox" name="lechuga"> Lechuga
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mayonesa picante
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Aji Rocoto
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Aji Amarillo
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lechuga"> Ketchup
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mostaza
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Cebolla
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Apio
+                </label>
+                <p class="precio">Precio: S/ 32.00</p>
+            </table>
+            <input type="submit" value="Agregar a la comanda">
+        </form>
+
+        <form id="marco">
+            <h4 id="titulo"> Combo Amigos</h4>
+            <h1> ¡Es hora de disfrutar el sabor de Jacub en pareja a cualquier hora!</h2>
+            <h2> 2 jarra Jugo surtido de 1L </h2>
+            <h2> 4 Sandwichs de pollo </h2>
+            <table class="comanda">
+                <label>
+                    <input type="checkbox" name="lechuga"> Lechuga
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mayonesa picante
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Aji Rocoto
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Aji Amarillo
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lechuga"> Ketchup
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mostaza
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Cebolla
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Apio
+                </label>
+                <p class="precio">Precio: S/ 32.00</p>
+            </table>
+            <input type="submit" value="Agregar a la comanda">
+        </form>
+
+        <form id="marco">
+            <h4 id="titulo"> Combo Amigos</h4>
+            <h1> ¡Es hora de disfrutar el sabor de Jacub en pareja a cualquier hora!</h2>
+            <h2> 2 jarra Jugo surtido de 1L </h2>
+            <h2> 4 Sandwichs de pollo </h2>
+            <table class="comanda">
+                <label>
+                    <input type="checkbox" name="lechuga"> Lechuga
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mayonesa picante
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Aji Rocoto
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Aji Amarillo
+                </label>
+
+                <label>
+                    <input type="checkbox" name="lechuga"> Ketchup
+                </label>
+                <label>
+                    <input type="checkbox" name="tomate"> Mostaza
+                </label>
+                <label>
+                    <input type="checkbox" name="mayonesa"> Cebolla
+                </label>
+                <label>
+                    <input type="checkbox" name="mostaza"> Apio
+                </label>
+                <p class="precio">Precio: S/ 32.00</p>
+            </table>
+            <input type="submit" value="Agregar a la comanda">
+        </form>
+     </section>    
+      -->
+
+    <!-- Page Title -->
+    <section class="page-title bg-cabecera light">
+        <figure class="bg-image bg-parallax"></figure>
+        <article class="container">
+            <ul class="row">
+                <li class="col-lg-8 push-lg-4">
+                    <h1 class="mb-0"><b>Promociones</b></h1>
+                </li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Page Content -->
+    <section class="page-content bg-light">
+        <header class="container">
+            <main class="row">
+                <article class="col-lg-8 push-lg-2">
+                    <main class="carousel" data-slick='{"dots": true}'>
+                        <!-- Combo Dúo -->
+                        <section class="product-single">
+                            <section class="product-image">
+                                <img loading="lazy" src="" alt="">
+                            </section>
+                            <section class="product-content">
+                                <section class="product-header text-center">
+                                    <h1 class="product-title"><b>Combo Dúo</b></h1>
+                                    <span class="product-caption text-dark"><b>La pareja perfecta para ti</b></span>
+                                </section>
+                                <p class="lead">¡Es hora de disfrutar un San Agustín en pareja a cualquier hora!</p>
+                                <ul class="list-check text-lg mb-4">
+                                    <li>2 Jugos de 21 Oz</li>
+                                    <li>2 Sandwiches de Pollo</li>
+                                </ul>
+                                <hr class="hr-primary">
+                                <h5 class="text-center">¡Arma tus sandwiches!</h5>
+                                <!-- Nav Pills -->
+                                <ul class="nav nav-pills nav-fill mb-3" role="tablist">
+                                    <li class="nav-item"><a class="nav-link active" href="#sandwich1"
+                                            aria-controls="home" role="tab" data-toggle="tab" id="CDS1">Sandwich #1</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="#sandwich2" aria-controls="profile"
+                                            role="tab" data-toggle="tab" id="CDS2">Sandwich #2</a></li>
+                                </ul>
+                                <!-- Tab Panes -->
+                                <section class="tab-content">
+                                    <section role="tabpanel" class="tab-pane fade active show" id="sandwich1">
+                                        <section class="panel-details-container">
+                                            <!-- Panel Details / Cremas -->
+                                            <section class="panel-details">
+                                                <h5 class="panel-details-title">
+                                                    <label class="custom-control custom-radio">
+                                                        <input name="radio_title_cremas" type="radio"
+                                                            class="custom-control-input" id="CremCD1">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <a href="#panelTopCremas1" data-toggle="collapse">Cremas & Otros</a>
+                                                </h5>
+                                                <section id="panelTopCremas1" class="collapse show">
+                                                    <section class="panel-details-content">
+                                                        <section class="row">
+                                                            <section class="col-sm-6">
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Mayonesa</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Mayonesa
+                                                                            Picante</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Ají
+                                                                            Rocoto</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Ají
+                                                                            Amarillo</span>
+                                                                    </label>
+                                                                </section>
+                                                            </section>
+                                                            <section class="col-sm-6">
+
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Ketchup</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Mostaza</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Cebolla</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Apio</span>
+                                                                    </label>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                            <!-- Panel Details / Adicionales -->
+                                            <section class="panel-details">
+                                                <h5 class="panel-details-title">
+                                                    <label class="custom-control custom-radio">
+                                                        <input name="radio_title_additions" type="radio"
+                                                            class="custom-control-input" id="AddsCD1">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <a href="#panelTopAdicionales1"
+                                                        data-toggle="collapse">Adicionales</a>
+                                                </h5>
+                                                <section id="panelTopAdicionales1" class="collapse">
+                                                    <section class="panel-details-content">
+                                                        <section class="row">
+                                                            <section class="col-sm-6">
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdAdd1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Queso
+                                                                            (S/ 3.50)</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdAdd1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Jamón
+                                                                            (S/ 3.50)</span>
+                                                                    </label>
+                                                                </section>
+                                                            </section>
+                                                            <section class="col-sm-6">
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdAdd1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Tocino
+                                                                            (S/ 3.50)</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdAdd1">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Huevo
+                                                                            (S/ 2.00)</span>
+                                                                    </label>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                            <!-- Panel Details / Observaciones -->
+                                            <section class="panel-details">
+                                                <h5 class="panel-details-title">
+                                                    <label class="custom-control custom-radio">
+                                                        <input name="radio_title_other" type="radio"
+                                                            class="custom-control-input" id="ObsCD1">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <a href="#panelTopObs1" data-toggle="collapse">Observaciones</a>
+                                                </h5>
+                                                <section id="panelTopObs1" class="collapse">
+                                                    <textarea cols="30" rows="4" class="form-control"
+                                                        placeholder="Cuentanos que debemos tener en cuenta con tu pedido..."
+                                                        id="cdObs1"></textarea>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                    <section role="tabpanel" class="tab-pane fade" id="sandwich2">
+                                        <section class="panel-details-container">
+                                            <!-- Panel Details / Cremas -->
+                                            <section class="panel-details">
+                                                <h5 class="panel-details-title">
+                                                    <label class="custom-control custom-radio">
+                                                        <input name="radio_title_cremas" type="radio"
+                                                            class="custom-control-input" id="CremCD2">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <a href="#panelTopCremas2" data-toggle="collapse">Cremas & Otros</a>
+                                                </h5>
+                                                <section id="panelTopCremas2" class="collapse show">
+                                                    <section class="panel-details-content">
+                                                        <section class="row">
+                                                            <section class="col-sm-6">
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Mayonesa</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Mayonesa
+                                                                            Picante</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Ají
+                                                                            Rocoto</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Ají
+                                                                            Amarillo</span>
+                                                                    </label>
+                                                                </section>
+                                                            </section>
+                                                            <section class="col-sm-6">
+
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Ketchup</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Mostaza</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Cebolla</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdCremas2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span
+                                                                            class="custom-control-description">Apio</span>
+                                                                    </label>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                            <!-- Panel Details / Adicionales -->
+                                            <section class="panel-details">
+                                                <h5 class="panel-details-title">
+                                                    <label class="custom-control custom-radio">
+                                                        <input name="radio_title_additions" type="radio"
+                                                            class="custom-control-input" id="AddsCD2">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <a href="#panelTopAdicionales2"
+                                                        data-toggle="collapse">Adicionales</a>
+                                                </h5>
+                                                <section id="panelTopAdicionales2" class="collapse">
+                                                    <section class="panel-details-content">
+                                                        <section class="row">
+                                                            <section class="col-sm-6">
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdAdd2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Queso
+                                                                            (S/ 3.50)</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdAdd2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Jamón
+                                                                            (S/ 3.50)</span>
+                                                                    </label>
+                                                                </section>
+                                                            </section>
+                                                            <section class="col-sm-6">
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdAdd2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Tocino
+                                                                            (S/ 3.50)</span>
+                                                                    </label>
+                                                                </section>
+                                                                <section class="form-group">
+                                                                    <label class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input cdAdd2">
+                                                                        <span class="custom-control-indicator"></span>
+                                                                        <span class="custom-control-description">Huevo
+                                                                            (S/ 2.00)</span>
+                                                                    </label>
+                                                                </section>
+                                                            </section>
+                                                        </section>
+                                                    </section>
+                                                </section>
+                                            </section>
+                                            <!-- Panel Details / Observaciones -->
+                                            <section class="panel-details">
+                                                <h5 class="panel-details-title">
+                                                    <label class="custom-control custom-radio">
+                                                        <input name="radio_title_other" type="radio"
+                                                            class="custom-control-input" id="ObsCD2">
+                                                        <span class="custom-control-indicator"></span>
+                                                    </label>
+                                                    <a href="#panelTopObs2" data-toggle="collapse">Observaciones</a>
+                                                </h5>
+                                                <section id="panelTopObs2" class="collapse">
+                                                    <textarea cols="30" rows="4" class="form-control"
+                                                        placeholder="Cuentanos que debemos tener en cuenta con tu pedido..."
+                                                        id="cdObs2"></textarea>
+                                                </section>
+                                            </section>
+                                        </section>
+                                    </section>
+                                </section>
+                                <section class="product-price text-center">S/ 60.00</section>
+                                <section class="row">
+                                    <section class="col-lg-6 push-lg-3" idCombo="65">
+                                        <button class="btn btn-outline-primary btn-lg btn-block" id="btnCD"><span
+                                                style="pointer-events:none;">Agregar al Carrito</span></button>
+                                    </section>
+                                </section>
+                                <section class="text-center mt-4">
+                                    <a href="https://sanagustin.pe/Carta" class="btn btn-link">Regresar a la carta</a>
+                                </section>
+                            </section>
+                        </section>
+                    </main>
+                </article>
+            </main>
+        </header>
+    </section>
+
+    <!-- JS Plugins -->
+    <script src="https://sanagustin.pe/src/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/tether/dist/js/tether.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://sanagustin.pe/src/plugins/jquery.appear/jquery.appear.js"></script>
+
+
+
+
+
+     <!-- Section -->
+     <section class="section section-lg dark bg-dark">
+
+        <!-- BG Image -->
+        <article class="bg-image bg-parallax"><img loading="lazy"
+                src="https://sanagustin.pe/src/img/photos/banner-fresas.jpg" alt=""></article>
+
+        <article class="container text-center">
+            <li class="col-lg-7 push-lg-1">
+                <h2 class="mb-3"><b>¿Quieres engreir tu paladar?</b></h2>
+                <h5 class="mb2">¡Visita nuestra carta y escoge lo que mas te guste!</h5>
+                <a href="../vistas/carta.html" class="btn btn-lg btn-primary"><span>Ordena Ahora</span></a>
+            </li>
+        </article>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-footer dark">
+
+        <main class="container col-11">
+            <!-- Footer 2nd Row -->
+            <section class="footer-second-row row align-items-center">
+                <article class="col-lg-4 text-center text-md-left" style="padding:0;">
+                    <h6><b>Horario de Atención: </b></h6>
+                    <h6><b>Lunes a sábado: 08:00 a.m. - 12:55 p.m. y de 5:00 - 9:55 p.m.</b></h6>
+                    <h6><b>Domingo: 8:00 a.m. - 12:55 p.m.</b></h6>
+                    <h6><b>Teléfono fijo: 221033</b></h6>
+                    <h6><b>Celular: 949623222</b></h6>
+                    <h6><b>Correo: jugueriajacub@gmail.com</b></h6>
+                </article>
+                <li class="col-lg-4 text-center">
+                    <a href="../vistas/index.html"><img loading="lazy"
+                            src="../img/logo.png" alt="" width="150" class="mt-5 mb-5"></a>
+                </li>
+                <article class="col-lg-4 col-md-6 text-center text-md-right">
+                    <a href="#" class="icon icon-social icon-circle icon-facebook"
+                    style="background-color:#415e9b; max-width: 80px; height: auto;">
+                    <i class="fa-brands fa-facebook"></i></a>
+
+                <a href="#" class="icon icon-social icon-circle icon-instagram"
+                    style="background-color:#ec1d59; max-width: 80px; height: auto;">
+                    <i class="fa-brands fa-instagram"></i></a>
+                </article>
+            </section>
+        </main>
+
+        <article class="container text-center">
+            <span class="text-sm">Copyright Juguería Jacub 2024©<br>Todos los derechos reservados.</span>
+        </article>
+
+        <!-- Back To Top -->
+        <a href="#" id="back-to-top"><i class="ti ti-angle-up"></i></a>
+
+    </footer>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.singlePageNav.min.js"></script>
+
+</body>
+
+</html>
